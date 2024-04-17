@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/calcs.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Главная страница</a></li>
+                    <li><a href="#">Калькулятор</a></li>
+                    <li><a href="author.html">Автор</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Калькулятор сравнения бензинового и электрического транспорта</h1>
+        <form id="calculator-form">
+            <div class="input-group">
+                <label for="distance">Пройденное расстояние (км):</label>
+                <input type="number" id="distance" step="0.01" required>
+            </div>
+            <div class="input-group">
+                <label for="efficiency">Расход топлива (л/100 км) или электроэнергии (кВт*ч/100 км):</label>
+                <input type="number" id="efficiency" step="0.01" required>
+            </div>
+            <div class="input-group">
+                <label for="fuel-price">Цена за литр бензина (руб):</label>
+                <input type="number" id="fuel-price" step="0.01" required>
+            </div>
+            <div class="input-group">
+                <label for="electricity-price">Цена за кВт*ч электроэнергии (руб):</label>
+                <input type="number" id="electricity-price" step="0.01" required>
+            </div>
+            <button type="submit">Рассчитать</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
